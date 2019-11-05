@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>OnlineLawyer</title>
+</head>
+<style>
+    body{
+        background-color: #002366;
+        padding: 20px;
+    }
+    /* ------------------------------------------------------------------------------- */
+    .Lawyer
+    {
+        text-align: center;
+        margin-left: 160px;
+    }
+    .Lawyer h1{
+        margin: auto;
+        color: rgb(255, 255, 255, .1);
+        border-radius: 20px;
+        font-family: geneva;
+        font-size: 50px;
+        background-image: url(g.jpg);
+        background-repeat: repeat-x;
+        -webkit-background-clip:text;
+        animation: animate 15s linear infinite;
+    }
+    @keyframes animate{
+        0%{
+            background-position: left 0px top 10px;
+        }
+        40%{
+            background-position: left 500px top 10px;
+        }
+    }
+    .hl{
+        border-color: orangered;
+        border-radius: 100px;
+        width: auto;
+        margin-right: 300px;
+        margin-left: 300px;
+        width: auto;
+        height: 3px;
+    }
+    /* ------------------------------------------------------------------------------- */
+                                    /* .note */
+    /* ------------------------------------------------------------------------------- */
+    .note
+    {
+        text-align: center;
+        margin-left: 160px;
+    }
+    .note h1{
+        margin: auto;
+        color: rgb(255, 255, 255, .1);
+        border-radius: 20px;
+        font-family: geneva;
+        font-size: 50px;
+        background-image: url(g.jpg);
+        background-repeat: repeat-x;
+        -webkit-background-clip:text;
+        animation: animate 15s linear infinite;
+    }
+    @keyframes animate{
+        0%{
+            background-position: left 0px top 10px;
+        }
+        40%{
+            background-position: left 500px top 10px;
+        }
+    }
+    .hl{
+        border-color: orangered;
+        border-radius: 100px;
+        width: auto;
+        margin-right: 300px;
+        margin-left: 300px;
+        width: auto;
+        height: 3px;
+    }
+    /* ------------------------------------------------------------------------------- */
+    .header{
+        display: flex;
+        flex-flow: row wrap;
+        /* border: solid;
+        border-color: black; */
+        width: auto;
+        height: auto;
+    
+    }
+    .icon{
+        /* border: solid;
+        border-color: black; */
+        z-index: 1;
+        top: 0;
+        left: 10px;
+        overflow: hidden;
+        position: fixed;
+        width: 100px;
+        height: 80px;
+        padding: 30px;
+    }
+    .icon > img{
+        width: auto;
+        height: 80px;
+    }
+    .btn{
+        /* border: solid;
+        border-color: black; */
+        background-color: rgb(128, 128, 128, .2);
+        width: 1100px;
+        height: 10px;
+        padding: 55px;
+        margin-left: 160px;
+        text-align: right;
+        
+    }
+    .btn  ul{
+        list-style: none;       
+    }
+    .btn ul li{
+        background-color: none;
+        /* border: 1px solid grey; */
+        width: 110px;
+        color:  white;
+        height: auto;
+        font-size: 20px;
+        line-height: 50px;
+        text-align: center;
+        float: left;
+    }
+    .btn ul li:hover
+     {
+         color: rgb(219, 174, 51);
+     }
+     .btn ul ul a:hover
+     {
+         color: rgb(219, 174, 51);
+     }
+     /* .btn ul ul li:hover
+     {
+         color: rgb(219, 174, 51);
+     } */
+     
+     .btn  ul ul a{
+         text-decoration: none;
+         color:white;
+         font-size: 20px;
+         background: gray;
+
+     }
+     .btn ul ul li{
+        color: white;
+        font-size: 20px;
+        width: 150px;
+        background-color: grey;
+     }
+     .btn ul ul{
+         display: none;
+     }
+     .btn ul li:hover > ul{
+         display: block;
+     }
+     .btn > .join{
+         border-radius: 50px;
+         border: none;
+         width: 100px;
+         font-size: 24px;
+         color: orange;
+         background-color: transparent;
+         margin-left: 0px;
+     }
+     .btn > .login{
+         border-radius: 50px;
+         border: none;
+         width: 100px;
+         font-size: 24px;
+         color: orange;
+         background-color: transparent;
+         margin-left: 50px;
+     }
+     .join:hover{
+         background-color: rgb(230, 173, 29, .2);
+     }
+     .login:hover{
+         background-color: rgb(230, 173, 29, .2);
+     }
+
+     /* ----------------------------------------------------------- */
+
+     .Welcome{
+         background-color: rgb(150, 149, 149, .2);
+         padding: 0px;
+         margin-top: 20px;
+         height: 400px;
+         margin-left: 160px;
+         text-align: center;
+        
+     }
+     .Welcome .note
+     {
+         font-size: 30px;
+     }
+    .Welcome .bis{
+        margin-top: 0px;
+        width: 500px;
+        height: 500px;
+     }
+    /* ----------------------------------------------------------- */
+     .main{
+         margin-left: 160px;
+         margin-top: 20px;
+         display: flex;
+         flex-flow: row wrap;
+         justify-content: space-between;
+         /* border: solid grey; */
+         height: 500px;
+         width: auto;  
+         
+     }
+     .left{
+         /* border: solid grey; */
+         width: 650px;
+         padding-top: 20px;
+         border-radius: 10px;
+
+     }
+    /* ------------------------------------------------------------------------------- */
+                            /* free consultation */
+     /* --------------------------------------------------------------------------------- */
+      .left img
+     {
+         width: 650px ;
+         height: auto;
+         border-radius: 20px;
+     }
+    
+     /* ------------------------------------------------------------------------------- */
+                            /* free consultation */
+     /* --------------------------------------------------------------------------------- */
+     .right{
+         /* border: solid grey; */
+         width: 430px;
+         margin-left: 20px;
+         padding: 10px;
+     }
+     .right h1{
+         color: white;
+     }
+     .right .FC{
+         display: block;
+         margin-bottom: 20px;
+         border-radius: 10px;
+         width: 410px;
+         height: 20px;
+         padding: 10px;
+         font-size: 20px
+     }
+
+     .right .FCM{
+         display: block;
+         margin-bottom: 20px;
+         border-radius: 10px;
+         width: 410px;
+         height: 150px;
+         padding: 10px;
+         font-size: 20px
+     }
+     .FC:focus
+     {
+        background-color: orange;
+     }
+     .FCM:focus
+     {
+        background-color: orange;
+     }
+
+     .Msg .f{
+         text-decoration: none;
+         background-color: rgb(114, 109, 109, .7);
+         color: rgb(252, 247, 239);
+         padding: 5px;
+         border-radius: 10px;
+         font-size: 20px;
+     }
+    .f:hover
+     {
+         color: orange;
+         background-color: white;
+     }
+     /* ----------------------------------------------------------- */
+     .cases1, .cases2{
+
+        margin-top: 20px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: 20px;
+        margin-left: 160px;
+        /* border: solid grey; */
+        height: auto;
+        width: auto; 
+        text-align: center;
+        
+        padding: 20px;
+     }
+     .cases1 a
+     {
+        text-decoration: none;
+        font-size: 18px;
+        color: white;
+     }
+     .cases1 a:hover
+     {
+        color: goldenrod;
+     }
+     .cases2 a:hover
+     {
+        color: goldenrod;
+     }
+
+
+     .cases2 a
+     {
+         text-decoration: none;
+         font-size: 18px;
+         color: white;
+     }
+     .cases1 img
+     {
+        margin-top: 10px;
+        width: 60px;
+        height: 60px;
+     }
+     .cases2 img
+     {
+        margin-top: 10px;
+        width: 60px;
+        height: 60px;
+     }
+
+     .o1, .o2, .o3, .o4, .o5
+     {
+        cursor: pointer;
+        border-radius: 150px;
+        text-align: center;
+        color: orange;
+        /* border: solid grey; */
+        background-color: rgba(218, 165, 32, 0.562) ;
+        row-gap: 10px;
+        width: 170px;
+        height: 170px;
+        margin-left: 20px;
+     }
+     .o1:hover
+     {
+         background-color: rgba(149, 197, 18, 0.562);
+     }
+     .o2:hover
+     {
+         background-color: rgba(149, 197, 18, 0.562);
+     }
+     .o3:hover
+     {
+         background-color: rgba(149, 197, 18, 0.562);
+     }
+     .o4:hover
+     {
+         background-color:rgba(149, 197, 18, 0.562);
+     }
+     .o5:hover
+     {
+         background-color: rgba(149, 197, 18, 0.562);
+     }
+
+     /* ----------------------------------------------------------- */
+
+     .footer{
+        margin-top: 20px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        /* border: solid grey; */
+        height: 300px;
+        width: auto;  
+        padding: 20px;
+     }
+     .l1, .l2, .l3, .l4, .l5{
+        border: solid grey;
+        width: 200px;
+        margin-left: 20px;
+     }
+     /* ----------------------------------------------------------- */
+
+     .footerhd{
+        margin-top: 20px;
+
+        border: solid grey;
+        height: 30px;
+        width: auto;  
+        padding: 10px;
+     }
+     .footerhd > .cr
+     {
+         text-align: center;
+         margin-bottom: 10px;
+         font-size: 12px;;
+     }
+     /* ----------------------------------------------------------------------- */
+     .btn ul li a{
+         text-decoration: none;
+         color: White;
+     }
+     .btn ul li a:hover
+     {
+         background-color: none;
+         color: goldenrod;
+     }
+        /* ------------------------------------------------------------------------- */
+    .footer
+    {
+ 
+        background-color: rgba(151, 148, 144, 0.3);
+        height: auto;
+        display: flex;
+        padding: 10px;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .footer .f1, .f2, .f3, .f4
+    {
+        height: 400px;
+        width: 250px;
+        /* border: 1px solid black; */
+    }
+
+    .footer h1
+    {
+        text-align: center;
+        color: white;
+        font-family: 'Times New Roman';
+    }
+    .footer article
+    {
+        text-align: center;
+        font-size: 18px;
+        font-size: 20px;
+        color: grey;
+        font-family: calibri;
+
+    }
+    .footer .f1
+    {
+        text-align: center;
+    }
+    .f1 .S
+    {   
+        cursor: pointer;
+        padding: 5px;
+        background-color: rgba(207, 167, 64, 0.678);
+        border-radius: 50px;
+        margin-top: 70px;
+        width: 50px;
+        height: 50px;
+    }
+    .f2 a
+    {
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        color: goldenrod;
+        font-size: 20px;
+        font-family: calibri;
+        margin-left: 10px;
+    }
+    .f3 label
+    {
+        color: rgb(37, 28, 28);
+        font-size: 16px;
+        font-size: 22px;
+        margin-left: 20px;
+    }
+    .f3 h4
+    {
+        color: white;
+        font-family: calibri;
+        font-size: 22px;
+        margin-left: 30px;
+        margin-top: 10px;
+        font: italic;
+    }
+    .f4
+    {
+        display: flex;
+        flex-flow: column;
+    }
+    .f4 label
+    {
+        font-size: 20px;
+        margin-bottom: 30px;
+        margin-left: 20px;
+    }
+    /* ------------------------------------------------------------------------- */
+</style>
+<body>
+        <div class="Lawyer">
+            <h1>@OnlineLawyer</h1>
+
+        </div>
+        <!---------------------------------------------------------------------->
+        <div class="note">
+                <h1>Experience.Innovation.Excellence</h1>
+        </div>
+        <!---------------------------------------------------------------------->
+        <div class="icon">
+            <img  src="nev.png" alt="">
+        </div>
+        
+    <div class="header">
+       
+        <div class="btn">
+                
+             <ul>
+                <li><a href="demo.html">Home</a></li>
+               <li>Practice Area
+                    <ul>
+                        <li> <a style="margin-left: left;" href="Family.html">Family Law</a> </li>
+                        <li> <a style="margin-left: left;" href="Busniess.html">Business Law</a> </li>
+                        <li> <a style="margin-left: left;" href="Insurance.html">Insurance Law</a> </li>
+                        <li> <a style="margin-left: left;" href="Criminal.html">Criminal Law</a> </li>
+                        <li> <a style="margin-left: left;" href="Property.html">Property Law</a> </li>
+                        <li> <a style="margin-left: left;" href="Employe.html">Employment Law</a> </li>
+                        <li> <a style="margin-left: left;" href="Fire.html">Fire Accident</a> </li>
+                        <li> <a style="margin-left: left;" href="Fiinical.html">Financial Law</a> </li>
+                        <li> <a style="margin-left: left;" href="Drugs.html">Drug offenses</a> </li>
+                        <li> <a style="margin-left: left;" href="Sexual.html">Sexual Offenses</a> </li>
+                        
+                    </ul>
+                </li>
+                <li><a href="WonCase.html">Won Cases</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li style="color: orange; font-size: 24px; margin-left: 70px;">Login
+                    <ul>
+                        <li> <a style="margin-left: -70px;" href="LawyerLogin.html">Lawyer</a></li>
+                        <li> <a style="margin-left: -90px;" href="">User</a></li>
+                    </ul>
+                </li>
+                <li style="color: orange; font-size: 24px; margin-left: -30px;">Join
+                    <ul>
+                        <li> <a style="margin-left: -70px;" href="Lawyer.html">Lawyer</a></li>
+                        <li> <a style="margin-left: -90px;" href="home.html">User</a></li>
+                    </ul>
+                </li>
+
+                        
+            </ul>
+        </div>
+    </div>
+
+    <!-- ------------------------------------------------------->
+
+    <div class="Welcome">
+
+        <div class="Wel">
+            <img class="bis" src="bism.png" alt="Allah">
+        </div>
+
+    
+    </div>
+
+    <div class="main">
+
+        <div class="left">
+            <img src="desu.jpg" alt="">
+        </div>
+        <form action="free.php" method="POST">
+            <div class="right">
+                <H1> Free Consultation</H1>
+
+                <input class="FC" type="text" name="" id="" placeholder="Your Name">
+                <input class="FC" type="text" name="" id="" placeholder="Your Email">
+                <input class="FC" type="text" name="" id="" placeholder="Subject">
+                <textarea class="FCM" name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                <div class="Msg">
+                    <a  class="f" href="" >Send message</a>
+                </div>
+            </div>
+        </form>
+
+    </div>
+    <!----------------------------------------------------------->
+    <div class="cases1">
+            <div class="o1">
+                <img src="family.png" alt=""> <br><br>
+                <a href="Family.html">Family Law</a>
+            </div>
+            <div class="o2">
+                <img src="business.png" alt=""><br><br>
+                <a href="Busniess.html">Business Law</a>      
+            </div>
+            <div class="o3">
+                <img src="Insurance.png" alt=""><br><br>
+                <a href="Insurance.html">Insurance Law</a>
+            </div>
+            <div class="o4">
+                <img src="criminal.png" alt=""><br><br>
+                <a href="Criminal.html">Criminal Law</a>
+            </div>
+            <div class="o5">
+                <img src="property.png" alt=""><br><br>
+                <a href="Property.html">Property Law</a>
+            </div>         
+    </div>
+    <div class="cases2">
+            <div class="o1">
+                <img src="employment.png" alt=""><br><br>
+                <a href="Employe.html">Employement Law</a>
+            </div>
+            <div class="o2">
+                <img src="fire.png" alt=""><br><br>
+                <a href="Fire.html">Fire Law</a>
+            </div>
+            <div class="o3">
+                <img src="fanical.png" alt=""><br><br>
+                <a href="Fiinical.html">Fanical Law</a>
+            </div>
+            <div class="o4">
+                    <img src="drug.png" alt=""><br><br>
+                    <a href="Drugs.html">Drugs Law</a>
+            </div>
+            <div class="o5">
+                <img src="sex.png" alt=""><br><br>
+                <a href="Sexual.html">Sexual Law</a>
+            </div>         
+    </div>
+    <!----------------------------------------------------------->
+
+    <!-- ------------------------------------------------------->
+    <div class="footer">
+            <div class="f1">
+                <h1> Whisper</h1>
+                <article>
+                        Far far away, behind the word mountains, 
+                        far from the countries Vokalia and Consonantia, 
+                        there live the blind texts.
+                </article>
+
+                <img class="S" src="fb.png" alt="">
+                <img class="S" src="twitter.png" alt="">
+                <img class="S" src="whatsapp.png" alt="">
+
+            </div>
+            <div class="f2">
+                <h1> Practice Area</h1>
+                <a href="Family.html">Family Law</a>
+                <a href="Busniess.html">Business Law</a>
+                <a href="Insurance.html">Insurance Law</a>
+                <a href="Criminal.html">Criminal Law</a>
+                <a href="Property.html">Property Law</a>
+                <a href="Employe.html">Employement Law</a>
+                <a href="Fire.html">Fire Accident</a>
+                <a href="Fiinical.html">Fanancial Law</a>
+                <a href="Drugs.html">Drug Offenses</a>
+                <a href="Sexual.html">Sexual Offenses</a>
+
+            </div>
+            <div class="f3">
+                <h1> Business Hours</h1>
+                <label for="">Opening Days:</label>
+                <h4>Monday-Friday:9am to 10pm Saturday:9am to 17pm</h4>
+                <label for="">Vactions:</label>
+                <h4>All Sunday Days All Offical Holidays</h4>
+            </div>
+            <div class="f4">
+                <h1> Have a Question</h1>
+                <label for="" style="color: grey">203 Royal Club, Street No 5, B-12, Islamabad</label>
+                <label for="" style="color: goldenrod;"> +92 311 0537357 </label>
+                <label for="" style="color: goldenrod;"> OnlineLawyer@gmail.com</label>
+            </div>
+
+    </div>
+    <div class="footerhd">
+            <div class="cr">
+                <h3> Copyright ©2019 All rights reserved | Online Lawyer.com  </h3>
+            </div>
+
+    </div>
+</body>
+</html>

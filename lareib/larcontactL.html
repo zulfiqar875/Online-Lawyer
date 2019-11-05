@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+                margin:0px;
+                padding: 0px;
+                font-family: sans-serif;
+            }
+
+            body {
+                background-color: #60adde;
+            }
+
+            .contact {
+                
+                padding: 40px 0;
+            }
+
+            .contact h1 {
+                text-align: center;
+                color: #ddd;
+            }
+
+            .form {
+                width: 320px;
+                height: 480px;
+                top: 30%;
+                left: 40%;
+                position: absolute;
+                box-sizing: border-box;
+                color: #fff;
+                background-color: #666;
+                padding: 70px 30px;
+            }
+
+            .formform {
+                max-width: 600px;
+                margin:auto;
+                padding: 0 10px;
+                overflow: hidden;
+            }
+
+            .section {
+                width: 100%;
+                box-sizing: border-box;
+                margin:16px 0;
+                display: block;
+                border:0;
+                background: #111;
+                padding: 20px 40px;
+                outline: none;
+                color: #ddd;
+                transition: 0.5s;
+            }
+
+            .section:focus {
+                box-shadow: 0 0 10px 40px #34495e;
+            }
+
+            textarea.section {
+                resize: none;
+                height: 120px;
+            }
+
+            .sub {
+                float: right;
+                border:0;
+                background: #34495e;
+                color: #fff;
+                padding: 12px 50px;
+                border-radius: 20px;
+                cursor: pointer;
+                transition: 0.5s;
+            }
+
+            .sub:hover {
+                background: #2980b9;
+            }
+
+            .leftnav {
+                position: fixed;
+                width: 160px;
+                height: 100%;
+                background-color:darkkhaki;
+            }
+
+            .leftnav ul li {
+                color: rgba(230, 230, 230, 0.9);
+                list-style-type: none;
+                padding: 15px 10px;
+                border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="leftnav">
+            <ul>
+                <li><a href="larhomeL.html">Home</a></li>
+                <li><a href="larcontactL.html">Contacts</a></li>
+                <li><a href="larmeabout.html">About</a></li>
+                <li><a href="larhelp.html">Help</a></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <h1>Contact Us</h1>
+            <div class="form">
+                <form  class="formform" action="larcontact.php" method="POST">
+                    <input type="text" class="section" placeholder="Enter name" name="username" required>
+                    <input type="email" class="section" placeholder="Enter email" name="useremail" required>
+                    <input type="password" class="section" placeholder="Enter password" name="userpassword" required>
+                    <textarea class="section" cols="30" rows="10" placeholder="Type your message here" name="messages"></textarea>
+                    <input type="submit" class="sub" value="Send Message">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

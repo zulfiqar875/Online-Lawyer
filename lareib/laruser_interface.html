@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>User Interface</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+                margin:0px;
+                padding: 0px;
+                font-family: sans-serif;
+            }
+
+            body {
+             background-color: #60adde;
+            }
+
+            .leftnav {
+                position: fixed;
+                width: 160px;
+                height: 100%;
+                background-color:darkkhaki;
+            }
+
+            .leftnav ul li {
+                color: rgba(230, 230, 230, 0.9);
+                list-style-type: none;
+                padding: 15px 10px;
+                border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+            }
+
+            .header{
+                border: solid rgb(212, 158, 7);
+                border-radius: 200px;
+                background-color: rgb(250, 250, 250, 0.7);
+                margin-left: 160px;
+                height: 50px;
+                padding-bottom: 30px;
+                text-align: center;
+                padding: 10px;
+                color:seagreen;
+            }
+
+            .login {
+                width: 320px;
+                height: 480px;
+                top: 30%;
+                left: 40%;
+                position: absolute;
+                box-sizing: border-box;
+                color: #fff;
+                background-color: #666;
+                padding: 70px 30px;
+            }
+
+            .abc {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                position: absolute;
+                top: -50px;
+                left: calc(50%-50px);
+                margin-left: 70px;
+            }
+
+            h1 {
+                margin:0;
+                padding: 0 0 20px;
+                text-align: center;
+                font-size: 22px;
+            }
+
+            .login label {
+                margin:0;
+                padding: 0;
+                font-weight: bold;
+            }
+
+            .login input {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .login .inputs {
+                border: none;
+                border-bottom: 1px solid #fff;
+                background: transparent;
+                outline: none;
+                height: 40px;
+                font-size: 16px;
+                color:chocolate;
+            }
+
+            .login .sub {
+                border: none;
+                background: #fb2595;
+                outline: none;
+                height: 40px;
+                font-size: 18px;
+                color:#fff;
+            }
+
+            
+            .login .sub:hover {
+                background: #8739;
+                opacity: 0.7;
+            }
+        </style>
+
+    </head>
+
+    <body>
+     
+        <div class="leftnav">
+            <ul>
+                <li><a href="larhomeL.html">Home</a></li>
+                <li><a href="larcontact.html">Contacts</a></li>
+                <li><a href="larmeabout.html">About</a></li>
+                <li><a href="larhelp.html">Help</a></li>
+            </ul>
+        </div>
+
+        <div class="header">
+            <h1>  User Login  </h1>
+        </div>
+
+        <div class="login">
+            <img src="larcourt.jpg" alt="abc" class="abc">
+            <h1>Login Now</h1>
+            <form action="larconnect.php" method="POST">
+                <label>Username</label><br><br>
+                <input type="text" placeholder="Enter username" name="username" class="inputs" required><br><br>
+
+                <label>Password</label><br><br>
+                <input type="text" placeholder="Enter password" name="passwords" class="inputs" required><br><br>
+
+                <input type="submit" value="Login" class="sub"><br><br>
+
+                <a href="password.php">Forgot your password</a><br><br>
+                
+            </form>
+        </div>
+    </body>
+
+</html>

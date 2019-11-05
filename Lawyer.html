@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lawyer Registration</title>
+</head>
+<stYle>
+    body{
+        background-color: #002366;
+
+    }
+    /* --------------------------------------------------------- */
+
+    .sidepanel{
+        z-index: 1;
+        left: 10px;
+        top: 8px;
+        border-right:  solid white;
+        overflow: hidden;
+        position: fixed;
+        background-color: rgba(151, 148, 144, 0.8);
+        width: 150px;
+        padding-top: 20px;;
+    }
+    .sidepanel > a{
+        padding: 10px;
+        text-decoration:none;
+        display: block;
+        margin-left: 10px;
+        color: goldenrod;
+        font-size: 20px;
+
+    }
+    a:hover
+    {
+        color: rgb(246, 250, 247);
+    }
+    /* ---------------------------------------------------------- */
+    .header{
+        border: solid rgb(212, 158, 7);
+        border-radius: 200px;
+        background-color: rgb(128, 128, 128, .3);
+        margin-left: 160px;
+        height: 50px;
+        padding-bottom: 30px;
+        
+    }
+    .header > h1{
+        text-align: center;
+        margin-bottom: 20px;
+        color: goldenrod; 
+        background-color: rgb(128, 128, 128, .3);
+        
+    }
+    /* ----------------------------------------------------------------- */
+
+    .form{
+        /* border: solid rgb(212, 158, 7); */
+        /* border-radius: 200px; */
+        background-color: rgb(128, 128, 128, .3);
+        margin-top: 10px;
+        margin-left: 160px;
+        height: auto;
+        padding: 30px; 
+    }
+    .form > label{
+        font-size: 20px;
+        margin-left: 10px;
+        color: white;
+    }
+    .form > input
+    {
+        height: 20px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        text-align: center;
+        margin-left: 10px;
+        border-color: rgb(2, 28, 104, .3);
+        background-color: rgb(2, 28, 104, .3) ;
+        color: white;
+    }
+
+    .form > h3{
+        border-bottom: 1px solid goldenrod;
+        color: white;
+        font-family: 'Times New Roman';
+    
+    }
+    .sign{
+  
+        margin-top: 10px;
+        margin-left: 160px;
+        height: auto;
+        text-align: center;
+        
+    }
+
+    .sign > .reg-btn{
+       background-color: rgb(128, 128, 128, .3);
+       border: solid .1 goldenrod;
+       
+       color: rgb(212, 158, 7);
+       border-radius: 20px;
+       font-size: 20px;
+       padding: 10px ;
+    }
+
+    .reg-btn:hover{
+        background-color: rgba(228, 142, 30, 0.5);
+        color:rgb(252, 246, 246);
+        cursor: pointer;
+    }
+
+    .sign > label
+    {
+        color: white;
+        font-size: 20px;
+        font-family: calibri;
+    }
+    .sign > label a
+    {
+        text-decoration: none;
+        font-family: Geneva;
+
+    }
+
+</stYle>
+<body>
+
+    <div class="sidepanel">
+        <a href="demo.html">Home</a>
+        <a href="">Practice Area</a>
+        <a href="WonCase.html">Won case</a>
+        <a href="Blog.html">Blog</a>
+        <a href="About.html">About</a>
+        <a href="Contact.html">Contact</a>
+    </div>
+    <!-- ----------------------------------------------------------->
+    <div class="header">
+        <h1>  Registration Form  </h1>
+    </div>
+    <!-- ----------------------------------------------------------->
+    <form action="LawyerReg.php" method="POST">
+        <div class="form">       
+            <h3>Personal Information</h3>
+            <label for="">First Name:</label>
+            <input type="text" name="first" id="" style="margin-left: 35px;">
+            <label for="">Last Name:</label>
+            <input type="text" name="last" id=""> 
+            <label for=""> Gender:</label>
+            <input type="text" name="gender" id="" style="margin-left: 10px;"><br>
+            <label for="">CNIC No.</label>
+            <input type="text" name="cnic" id=""   style="margin-left: 49px;">
+            <label for="">NTN NO.</label> 
+            <input type="text" name="ntn" id=""    style="margin-left: 23px;">  
+
+            <h3>Account Details</h3> 
+            <label for="">User Name:</label>
+            <input type="text" name="username" id="" style="margin-left: 35px;">
+            <label for="">Password:</label>
+            <input type="password" name="password" id="" style="margin-left: 20px;">
+            <label for="">Re-type Password:</label>
+            <input type="password" name="confirmpassword" id=""> <br>
+            <label for="">First Name:</label>
+            <input type="text" name="org" id="" placeholder="Orgnization name" style="margin-left: 37px;"> <br>
+
+            <h3> Contact Information</h3> 
+            <label for=""> Email</label>
+            <input type="email" name="email" id="" style="margin-left: 85px;">
+            <label for=""> Confirm Email</label>
+            <input type="email" name="confirmemail" id="">
+            <label for=""> Mobile No.</label>
+            <input type="text" name="mobile" id=""> <br> 
+            <label for=""> LandLine No.</label>
+            <input type="text" name="landline" id="" style="margin-left: 20px;"> <br> 
+
+            <h3> Address Information</h3> 
+            <label for=""> Country</label>
+            <input type="text" name="country" id="" style="margin-left: 70px;">
+            <label for=""> Province</label>
+            <input type="text" name="province" id="" style="margin-left: 13px;">
+            <label for=""> City</label>
+            <input type="text" name="city" id="" style="margin-left: 50px;"> <br>
+            <label for=""> Secret Question</label>
+            <input type="text" name="squestion" id="">
+            <label for=""> Answer</label>
+            <input type="text" name="answer" id="" style="margin-left: 20px;">
+            <label for=""> Address</label>
+            <input type="text" name="address" id="" style="margin-left: 20px;">
+            <br>
+        </div>
+
+        <div class="sign">
+
+            <input class="reg-btn" type="submit" value="Sign Up"> <br>
+            <label for="">If you Already Register: <a href="LawyerLogin.html"> <b> Login Now </b> </a> </label>
+        </div>
+    </form>
+</body>
+</html>
